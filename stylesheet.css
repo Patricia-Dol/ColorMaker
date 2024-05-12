@@ -39,3 +39,23 @@ button {
 button:hover {
     background-color: darkgray; /* Change background color on hover */
 }
+.image-container {
+    white-space: nowrap; /* Prevent images from wrapping to a new line */
+    overflow: hidden; /* Hide overflowing images */
+}
+
+.image-container img {
+    display: inline-block; /* Display images in a row */
+    animation: slide 10s linear infinite; /* Apply the slide animation */
+    margin-right: 20px; /* Add spacing between images */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* End position (move images to the left) */
+    }
+}
+
